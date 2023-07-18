@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Data Fetch</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-beta3/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS for the landing page */
+    .navbar {
+      margin-bottom: 20px;
+    }
+
+    .person-details {
+      margin-top: 40px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#person-details">Person Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#picture-form">Picture Form</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Person Details Section -->
+    <section id="person-details" class="person-details">
+      <h2>Person Details</h2>
+      <div id="dataContainer"></div>
+    </section>
+
+    <!-- Picture Form Section -->
+    <section id="picture-form">
+      <h2>Picture Form</h2>
+      <form>
+        <div class="mb-3">
+          <label for="pictureLink" class="form-label">Picture Link</label>
+          <input type="text" class="form-control" id="pictureLink" placeholder="Enter picture link">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2023 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
